@@ -46,7 +46,8 @@ a {
     color: #fff;
     background: #ff5722;
     background: linear-gradient(to right, #ff5722, #ff5728);
-    border-radius: 15px;
+    border-radius: 100px;
+    border: 1px solid #fff;
     display: inline-block;
     line-height: 63px;
     padding: 0 35px;
@@ -240,12 +241,6 @@ a {
     margin: -15px 0 0 7px;
 }
 
-@media(max-width:1600px) {
-    .header .main-header ul li a .badge {
-        margin: -15px 0 0 0;
-    }
-}
-
 .header .main-header ul li a i {
     font-size: 14px;
 }
@@ -256,6 +251,8 @@ a {
     font-size: 16px;
     color: #ff5722;
     font-weight: bold;
+    border-radius: 17px;
+    border: none;
 }
 
 .header .main-header ul li a.btn-registration span {
@@ -342,12 +339,6 @@ a {
     font-weight: bold;
     vertical-align: top;
     margin: -15px 0 0 7px;
-}
-
-@media(max-width:1600px) {
-    .header .main-header ul li .childMenu li a .badge {
-        margin: -15px 0 0 0;
-    }
 }
 
 .header .main-header ul li .childMenu li:hover>a {
@@ -1143,92 +1134,6 @@ a {
     justify-content: space-between !important;
 }
 
-@media(min-width:1200px) {
-    .header .extra-header.sticky {
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        background: #fff;
-        box-shadow: 0 0 46px 0 rgba(5, 35, 61, .07);
-        animation: fadeInDown .1s ease;
-        left: 0;
-    }
-    .header .extra-header.sticky .logo img {
-        display: block;
-    }
-    .header .extra-header.sticky .logo span {
-        display: none;
-    }
-    .header.white .extra-header.sticky .logo span {
-        color: #42464e;
-    }
-    .header.white .extra-header.sticky .menu ul li a {
-        color: #42464e;
-    }
-    .header.white .extra-header.sticky .menu ul li.active a {
-        color: #08f;
-    }
-    .header .update-menu {
-        position: relative;
-        left: -14px;
-    }
-    .header.active-child .justify-space-beetwen {
-        -ms-flex-pack: end !important;
-        justify-content: flex-end !important;
-    }
-    .header.active-child .update-menu {
-        left: 0;
-    }
-}
-
-@media(max-width:1199px) {
-    .header .justify-space-beetwen {
-        justify-content: flex-end !important;
-    }
-    .header.active-child .main-header {
-        margin-bottom: 0;
-        height: 85px;
-    }
-    .header.active-child .main-header .main-logo img {
-        height: 54px;
-    }
-    .header.active-child .main-header .btn-menu {
-        line-height: 54px;
-    }
-    .header .extra-header {
-        height: auto;
-        position: static;
-    }
-    .header .extra-header.show-menu {
-        border-bottom: 1px solid #d1dfe8;
-    }
-    .header .extra-header .logo {
-        width: 100%;
-    }
-    .header .extra-header .menu {
-        display: none;
-        border-top: 1px solid #dce4e9;
-    }
-    .header .extra-header .menu ul {
-        margin: 0;
-    }
-    .header .extra-header .menu ul li.active {
-        display: none;
-    }
-    .header .extra-header .menu ul li a {
-        line-height: 50px;
-    }
-    .header .extra-header .menu .btn-registration {
-        margin: 8px 0;
-    }
-    .header.white .extra-header.show-menu {
-        border-bottom: none;
-    }
-    .header.white .extra-header .menu {
-        border-top-color: rgba(255, 255, 255, .2);
-    }
-}
-
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -1252,7 +1157,7 @@ a {
 }
 
 .footer {
-    background-color: #101215;
+    background-color: #160d3b;
     color: #7d8492;
 }
 
@@ -1274,33 +1179,6 @@ a {
     margin-bottom: 30px;
 }
 
-@media(max-width:991px) and (min-width:768px) {
-    .footer-menu {
-        padding-top: 11px;
-        margin-bottom: 5px;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-menu {
-        padding-bottom: 25px;
-        margin-bottom: 30px;
-    }
-}
-
-@media(min-width:992px) {
-    .footer .col-w-20 {
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-    .footer .col-w-60 {
-        -ms-flex: 0 0 60%;
-        flex: 0 0 60%;
-        max-width: 60%;
-    }
-}
-
 .footer .title {
     color: #d1d3d6;
     font-size: 15px;
@@ -1308,12 +1186,6 @@ a {
     margin-top: 0;
     margin-bottom: 10px;
     line-height: 21px;
-}
-
-@media(max-width:991px) and (min-width:768px) {
-    .footer .title {
-        margin-top: 25px;
-    }
 }
 
 .footer .title a {
@@ -1333,29 +1205,8 @@ a {
     padding-bottom: 25px;
 }
 
-@media(max-width:767px) {
-    .footer-address {
-        padding-bottom: 15px;
-    }
-}
-
 .footer-address .shared-experience {
     padding-top: 35px;
-}
-
-@media(max-width:991px) and (min-width:768px) {
-    .footer-address .shared-experience {
-        padding-top: 10px;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-address .shared-experience {
-        padding-top: 10px;
-    }
-    .footer-address .shared-experience+ul {
-        margin-bottom: 20px;
-    }
 }
 
 .footer-address .social {
@@ -1413,18 +1264,6 @@ a {
     padding-top: 5px;
 }
 
-@media(max-width:991px) {
-    .footer-bct {
-        position: initial;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-bct {
-        position: initial;
-    }
-}
-
 .footer-bct-hanggia {
     position: absolute;
     right: 200px;
@@ -1435,19 +1274,6 @@ a {
 
 .footer-bct-hanggia img {
     height: 44px;
-}
-
-@media(max-width:991px) {
-    .footer-bct-hanggia {
-        position: initial;
-        margin-right: 10px;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-bct-hanggia {
-        position: initial;
-    }
 }
 
 .footer-copyright {
@@ -1463,35 +1289,11 @@ a {
     margin: 0;
 }
 
-@media(max-width:767px) {
-    .footer-copyright {
-        padding: 0;
-    }
-}
-
-@media(max-width:767px) and (min-width:576px) {
-    .footer-copyright:after {
-        content: "";
-        height: 1px;
-        background: #24282e;
-        width: 100%;
-        position: absolute;
-        top: 84px;
-    }
-}
-
 .footer-copyright .copyright {
     padding-top: 13px;
     padding-bottom: 7px;
     display: inline-block;
     font-size: 13px;
-}
-
-@media(max-width:767px) {
-    .footer-copyright .copyright {
-        padding-top: 22px;
-        padding-bottom: 22px;
-    }
 }
 
 .footer-copyright .copyright a {
@@ -1507,66 +1309,12 @@ a {
     width: 100%;
 }
 
-@media(min-width:992px) {
-    .footer-copyright .achievement {
-        text-align: right;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-copyright .achievement {
-        margin-top: 22px;
-        margin-bottom: 22px;
-    }
-}
-
-.footer-copyright .achievement span {
-    display: inline-block;
-}
-
-@media(max-width:575px) {
-    .footer-copyright .achievement span {
-        max-width: 55%;
-    }
-}
-
 .footer-copyright .achievement span.icon-achievement {
     margin-top: 6px;
 }
 
-@media(min-width:1200px) {
-    .footer-copyright .achievement span.icon-achievement {
-        margin-top: 0;
-    }
-}
-
-@media(max-width:991px) {
-    .footer-copyright .achievement span.icon-achievement {
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-}
-
-@media(max-width:767px) {
-    .footer-copyright .achievement span.icon-achievement {
-        vertical-align: top;
-    }
-}
-
 .footer-copyright .achievement span img {
     height: 28px;
-}
-
-@media(min-width:1200px) {
-    .footer-copyright .achievement span img {
-        margin-top: -12px;
-    }
-}
-
-@media(max-width:991px) {
-    .footer-copyright .achievement span img {
-        height: auto;
-    }
 }
 
 .footer .copyright-mobile {
@@ -1574,12 +1322,6 @@ a {
     text-align: center;
     color: #545a68;
     padding: 15px 0;
-}
-
-@media(min-width:1200px) {
-    .footer-menu ul li a {
-        white-space: nowrap;
-    }
 }
 
 body>#container {
@@ -1592,7 +1334,7 @@ body>#container {
     text-align: center;
     padding: 30px 0 45px;
     color: #fff;
-    background: url(/Themes/Portal/Default/Styles_New/images/index-home/bg-register-bottom.jpg) no-repeat top center;
+    background: url(../img/bg-register-bottom.jpg) no-repeat top center;
 }
 
 .register-bottom h2 {
@@ -1628,40 +1370,6 @@ body>#container {
     padding: 0 45px;
     font-size: 24px;
     vertical-align: top;
-}
-
-@media(max-width:991px) and (min-width:768px) {
-    .register-bottom {
-        background-size: cover !important;
-    }
-    .register-bottom h2 {
-        font-size: 32px;
-        line-height: 42px;
-    }
-    .register-bottom .reg-form input {
-        width: 400px;
-    }
-    .register-bottom .reg-form .btn-registration {
-        padding: 0 35px;
-    }
-}
-
-@media(max-width:767px) {
-    .register-bottom {
-        background-size: cover !important;
-    }
-    .register-bottom h2 {
-        font-size: 25px;
-        line-height: 32px;
-    }
-    .register-bottom p {
-        font-size: 18px;
-    }
-    .register-bottom .reg-form .btn-registration {
-        line-height: 58px;
-        height: 58px;
-        font-size: 20px;
-    }
 }
 
 .plugin-drag_drop.multi>.selectize-input>div.ui-sortable-placeholder {
@@ -1723,14 +1431,6 @@ body>#container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-}
-
-@media(min-width:768px) {
-    .Tam-modal-register .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
 }
 
 .Tam-modal-register .d-flex {
@@ -2382,149 +2082,6 @@ body>#container {
     transform: rotate(-90deg);
 }
 
-@media(max-width:1900px) {
-    .Tam-modal-register-body {
-        padding: 80px 0 35px;
-    }
-    .Tam-modal-register .close {
-        top: 30px;
-    }
-}
-
-@media(max-width:1399px) {
-    .Tam-modal-register-body {
-        padding: 30px 0 35px;
-    }
-    .Tam-modal-register-body .logo {
-        height: 50px;
-    }
-    .Tam-modal-register-body .logo img {
-        height: 50px;
-    }
-    .Tam-modal-register-body h2 {
-        margin-top: 16px;
-        font-weight: 500;
-        font-size: 26px;
-    }
-    .Tam-modal-register-body p {
-        margin-top: 11px;
-        font-size: 16px;
-        line-height: 19px;
-    }
-    .Tam-modal-register-body .form-request {
-        margin-top: 24px;
-    }
-    .Tam-modal-register-body .form-request .social-login__btn-group {
-        margin-bottom: 0;
-    }
-    .Tam-modal-register .close {
-        top: 30px;
-    }
-    .Tam-modal-register .close svg {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media(max-width:991px) {
-    .Tam-modal-register-content {
-        padding-top: 0;
-    }
-    .Tam-modal-register .close {
-        color: #000;
-        font-size: 30px;
-        padding: 15px;
-        top: 0;
-        right: 0;
-    }
-}
-
-@media(max-width:767px) {
-    .Tam-modal-register-body {
-        padding: 30px 15px 5px;
-        margin: 0;
-        width: 100%;
-    }
-    .Tam-modal-register-body h2 {
-        font-size: 20px;
-        line-height: normal;
-    }
-    .Tam-modal-register-body .form-request .notification .noti {
-        padding: 10px 15px;
-    }
-    .Tam-modal-register-body .form-request .form-group {
-        margin-bottom: 15px;
-    }
-    .Tam-modal-register-body .form-request .form-group.mdc-text-field input {
-        padding: 18px 10px 2px 19px;
-    }
-    .Tam-modal-register-body .form-request .form-group.mdc-text-field label {
-        top: 11px;
-    }
-    .Tam-modal-register-body .form-request .form-group.mdc-select-field label {
-        top: 1px;
-        height: 41px;
-        padding: 10px 19px;
-    }
-    .Tam-modal-register-body .form-request .form-group.mdc-select-field select {
-        padding: 18px 10px 2px 19px;
-    }
-    .Tam-modal-register-body .form-request .form-group.mdc-selectize label {
-        top: 11px;
-    }
-    .Tam-modal-register-body .form-request .form-group.captcha-field .resetCaptchaBtn,
-    .Tam-modal-register-body .form-request .form-group .captcha-field .resetCaptchaBtn {
-        width: 43px;
-        height: 43px;
-        line-height: 43px;
-    }
-    .Tam-modal-register-body .form-request .form-group.captcha-field #CaptchaInput,
-    .Tam-modal-register-body .form-request .form-group .captcha-field #CaptchaInput {
-        width: 130px;
-    }
-    .Tam-modal-register-body .form-request .form-group.captcha-field #CaptchaCanv,
-    .Tam-modal-register-body .form-request .form-group .captcha-field #CaptchaCanv {
-        height: 43px;
-        width: auto;
-    }
-    .Tam-modal-register-body .form-request .form-group.captcha-field #imgCapchaPopup,
-    .Tam-modal-register-body .form-request .form-group .captcha-field #imgCapchaPopup {
-        height: 43px;
-    }
-    .Tam-modal-register-body .form-request .form-group .selectize-input {
-        padding: 18px 10px 2px 19px;
-    }
-    .Tam-modal-register-body .form-request .form-group .btn-registration {
-        padding: 0 45px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 20px;
-    }
-    .Tam-modal-register-body .form-request .social-login span {
-        padding-bottom: 15px;
-    }
-    .Tam-modal-register-body .form-request .social-login__btn-group {
-        margin-bottom: 20px;
-    }
-    .Tam-modal-register-body .form-request .social-login__btn-group a {
-        width: 129px;
-        height: 40px;
-        margin: 0 7.5px;
-    }
-    .Tam-modal-register .close {
-        color: #000;
-        font-size: 20px;
-        padding: 15px;
-        top: 0;
-        right: 0;
-    }
-    .Tam-modal-register .close svg {
-        fill: #000;
-        width: 20px;
-        height: 20px;
-    }
-}
-
 .pulse {
     -webkit-animation: pulse 1s steps(8) infinite;
     animation: pulse 1s steps(8) infinite;
@@ -2584,7 +2141,7 @@ body>#container {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.286;
-    color: #fded37;
+    color: #fff;
     padding-top: 125px;
     padding-bottom: 45px;
 }
@@ -2599,8 +2156,8 @@ body>#container {
 }
 
 .Tam-affiliate .income .block-img img {
-    margin-top: 95px;
-    margin-left: -320px;
+    margin-top: 10px;
+    margin-left: -218px;
 }
 
 .Tam-affiliate .introduce {
@@ -2612,7 +2169,7 @@ body>#container {
     content: "";
     background: url(../img/bg-gioi-thieu.png) no-repeat center top;
     position: absolute;
-    height: 100%;
+    height: 106%;
     width: 100%;
     left: 0;
     top: 40px;
@@ -2622,7 +2179,7 @@ body>#container {
 .Tam-affiliate .introduce .title h2 {
     font-size: 38px;
     line-height: 1.263;
-    color: #41b75e;
+    color: #ff6432;
     text-align: center;
     font-weight: bold;
     margin-top: -30px;
@@ -2631,8 +2188,12 @@ body>#container {
 .Tam-affiliate .introduce .title h2 span {
     display: block;
     font-size: 100px;
+    margin: 20px auto;
+    height: 94px;
     font-weight: bold;
-    color: #ff9112;
+    background-image: url(../img/cash500k.png);
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: UTM;
 }
 
@@ -2657,10 +2218,10 @@ body>#container {
 
 .Tam-affiliate .introduce .content .take h2 {
     font-size: 16px;
-    color: #ca4300;
+    color: #fff;
     display: inline-block;
     background: url(../img/bg-price.png) no-repeat center top;
-    height: 125px;
+    height: 136px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2708,7 +2269,7 @@ body>#container {
 
 .Tam-affiliate .step-rule {
     background: url(../img/bg-3-buoc.png) no-repeat center top;
-    color: #fff;
+    color: #333;
     padding: 80px 0 54px;
 }
 
@@ -2717,12 +2278,13 @@ body>#container {
     font-weight: 700;
     margin: 0 0 30px;
     line-height: 45px;
+    color: #ff5722;
 }
 
 .Tam-affiliate .step .item .icon {
     display: inline-block;
-    width: 85px;
-    height: 84px;
+    width: 160px;
+    height: 173px;
 }
 
 .Tam-affiliate .step .item .icon.step-register {
@@ -2750,7 +2312,7 @@ body>#container {
 }
 
 .Tam-affiliate .rule {
-    margin-top: 130px;
+    margin-top: 200px;
 }
 
 .Tam-affiliate .rule h2 {
@@ -2758,6 +2320,7 @@ body>#container {
     font-weight: 700;
     margin: 0 0 25px;
     line-height: 45px;
+    color: #ff5722;
 }
 
 .Tam-affiliate .rule ul {
@@ -2777,9 +2340,9 @@ body>#container {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #fff;
+    background: #ff6432;
     font-size: 14px;
-    color: #41b75e;
+    color: #fff;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
@@ -2835,13 +2398,16 @@ body>#container {
 }
 
 .Tam-affiliate .trust {
+    margin-top: 30px;
     padding: 75px 0 45px;
+    position: relative;
+    z-index: 1;
 }
 
 .Tam-affiliate .trust h2 {
     font-size: 38px;
     font-weight: 700;
-    color: #32ac57;
+    color: #ff5722;
     margin: 0 0 15px;
     line-height: 45px;
 }
@@ -2871,7 +2437,7 @@ body>#container {
 .Tam-affiliate .trust .trust-info .item h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #41b75e;
+    color: #ff6432;
     margin: 0 0 20px;
 }
 
@@ -2993,8 +2559,8 @@ body>#container {
 
 .Tam-affiliate .btn-registration {
     height: 74px;
-    background: #fded37;
-    color: #41b75e;
+    background: #fbaf5d;
+    color: #fff;
     font-size: 28px;
     font-weight: bold;
     line-height: 74px;
@@ -3172,315 +2738,6 @@ body>#container {
 
 .modal-affiliate .affiliate-form-fail a {
     color: #1aa3dd;
-}
-
-@media(max-width:1365px) and (min-width:1200px) {
-    .Tam-affiliate .introduce .row-fix {
-        margin: 0 -40px;
-    }
-}
-
-@media(max-width:991px) {
-    .Tam-affiliate .income .block-content h1 {
-        font-size: 28px;
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-    .Tam-affiliate .income .block-img img {
-        margin-top: 30px;
-        margin-left: 0;
-    }
-    .Tam-affiliate .income {
-        background-size: cover;
-        padding-bottom: 0;
-    }
-    .Tam-affiliate .introduce {
-        text-align: center;
-        position: relative;
-        padding-top: 65px;
-    }
-    .Tam-affiliate .introduce .title h2 {
-        font-size: 28px;
-    }
-    .Tam-affiliate .introduce .title p {
-        font-size: 21px;
-    }
-    .Tam-affiliate .introduce .row-fix {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    .Tam-affiliate .register-bottom h2 {
-        font-size: 28px;
-    }
-}
-
-@media(min-width:992px) and (max-width:1199px) {
-    .Tam-affiliate .step-rule {
-        padding: 60px 0 35px;
-    }
-    .Tam-affiliate .trust {
-        padding: 75px 0 45px;
-    }
-    .Tam-affiliate .trust h2 {
-        padding: 0 110px;
-    }
-    .Tam-affiliate .trust .trust-info .block-img img {
-        max-width: 100%;
-    }
-    .Tam-affiliate .trust .trust-info .item {
-        width: 220px;
-    }
-    .Tam-affiliate .trust .trust-info .item.first {
-        top: 53px;
-        right: 5px;
-    }
-    .Tam-affiliate .trust .trust-info .item.second {
-        bottom: -24px;
-        left: 340px;
-    }
-    .Tam-affiliate .trust .trust-info .item.three {
-        top: 53px;
-        left: -15px;
-    }
-    .Tam-affiliate .register-bottom h2 {
-        line-height: 1.2;
-        margin-bottom: 30px;
-        padding: 0 100px;
-    }
-    .menu-fixed {
-        display: none !important;
-    }
-    .Tam-affiliate .introduce .btn-registration {
-        margin-bottom: 22px;
-    }
-    .Tam-affiliate .introduce .row-fix {
-        margin: 0 -15px;
-    }
-    .take.two .item img {
-        width: 100%;
-    }
-    .take.three img {
-        width: 160px;
-    }
-    .Tam-affiliate .introduce .content .take.three h2 {
-        padding: 18px 60px;
-        background-size: 95% auto;
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
-    .take.one .item img {
-        width: 100%;
-    }
-}
-
-@media(min-width:768px) and (max-width:991px) {
-    .Tam-affiliate .step-rule {
-        padding: 30px 0 30px;
-        background: #41b75e;
-    }
-    .Tam-affiliate .step-rule .viewDetail {
-        color: #fff;
-    }
-    .Tam-affiliate .step h2 {
-        padding: 0 140px;
-        margin: 0 0 40px;
-        font-size: 28px;
-    }
-    .Tam-affiliate .rule {
-        margin-top: 20px;
-    }
-    .Tam-affiliate .trust {
-        padding: 0 0 45px;
-    }
-    .Tam-affiliate .trust h2 {
-        font-size: 28px;
-    }
-    .Tam-affiliate .trust .trust-info .block-img {
-        height: 325px;
-        margin-top: -40px;
-    }
-    .Tam-affiliate .trust .trust-info .block-img img {
-        max-width: 100%;
-        margin: 0;
-    }
-    .Tam-affiliate .trust .trust-info .item {
-        width: 100% !important;
-        position: static;
-        text-align: left !important;
-        margin-bottom: 30px;
-    }
-    .Tam-affiliate .trust .trust-info .item ul li {
-        line-height: 21px;
-        background-position: left center !important;
-        padding-right: 0 !important;
-        padding-left: 35px !important;
-    }
-    .Tam-affiliate .register-bottom h2 {
-        line-height: 1.2;
-        margin-bottom: 30px;
-    }
-    .menu-fixed {
-        display: none !important;
-    }
-    .Tam-affiliate .introduce .title h2 span {
-        font-size: 80px;
-    }
-    .Tam-affiliate .introduce .content .take.three h2 {
-        padding: 30px 220px;
-    }
-    .Tam-affiliate .introduce:before {
-        background-size: cover;
-    }
-    .Tam-affiliate .introduce .content .take h2 {
-        margin-top: 160px;
-    }
-    .Tam-affiliate .introduce:before {
-        background-position: center -110px;
-    }
-    .Tam-affiliate .introduce .btn-registration {
-        margin-bottom: 110px;
-    }
-}
-
-@media(max-width:767px) {
-    .Tam-affiliate .btn-registration {
-        margin: auto;
-        height: 58px;
-        font-size: 20px;
-        line-height: 58px;
-        padding: 0 50px;
-    }
-    .Tam-affiliate .income .block-content h1 {
-        text-align: center;
-    }
-    .Tam-affiliate .income .block-content .content {
-        text-align: center;
-    }
-    .Tam-affiliate .income .block-content .content p {
-        text-align: left;
-    }
-    .Tam-affiliate .income .block-img img {
-        max-width: 100%;
-    }
-    .Tam-affiliate .introduce:before {
-        background-size: cover;
-    }
-    .Tam-affiliate .introduce .title h2 span {
-        font-size: 48px;
-    }
-    .Tam-affiliate .introduce .content .take h2 {
-        height: 85px;
-        display: block;
-        background-size: 100%;
-        padding: 20px 27px;
-        margin-top: 65px;
-        margin-bottom: 20px;
-    }
-    .Tam-affiliate .introduce .content .take h2 span {
-        font-size: 24px;
-    }
-    .Tam-affiliate .introduce .content .take.two .list .item {
-        margin-bottom: 10px;
-    }
-    .Tam-affiliate .introduce .content .take.three h2 {
-        padding: 20px 27px;
-    }
-    .Tam-affiliate .introduce .btn-registration {
-        margin-bottom: 0;
-    }
-    .Tam-affiliate .step-rule {
-        padding: 40px 0 15px;
-        background: #41b75f;
-    }
-    .Tam-affiliate .step-rule .viewDetail {
-        color: #fff;
-    }
-    .Tam-affiliate .step h2 {
-        margin: 0 0 40px;
-        font-size: 22px;
-        line-height: 1.2;
-    }
-    .Tam-affiliate .step .item {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
-        margin-bottom: 25px;
-    }
-    .Tam-affiliate .step .item .icon {
-        flex-shrink: 0;
-        width: 65px;
-        height: 65px;
-        background-size: 65px !important;
-        margin-right: 15px;
-    }
-    .Tam-affiliate .step .item h4 {
-        margin: 0 0 10px;
-    }
-    .Tam-affiliate .rule {
-        padding: 0 0 20px;
-        margin-top: 0;
-    }
-    .Tam-affiliate .rule h2 {
-        font-size: 22px;
-        line-height: 1.2;
-    }
-    .Tam-affiliate .rule ul li:nth-child(2) {
-        align-items: flex-start;
-    }
-    .Tam-affiliate .rule ul li:nth-child(2) span {
-        margin-top: 5px;
-    }
-    .Tam-affiliate .rule table {
-        width: 100%;
-    }
-    .Tam-affiliate .trust {
-        padding: 70px 0 45px;
-    }
-    .Tam-affiliate .trust h2 {
-        font-size: 26px;
-        line-height: 1.2;
-    }
-    .Tam-affiliate .trust .trust-info {
-        padding-bottom: 0;
-    }
-    .Tam-affiliate .trust .trust-info .block-img {
-        height: 280px;
-        margin-top: -40px;
-    }
-    .Tam-affiliate .trust .trust-info .block-img img {
-        max-width: 600px;
-        transform: translateX(-22%);
-        margin: 0;
-    }
-    .Tam-affiliate .trust .trust-info .item {
-        width: 100% !important;
-        position: static;
-        text-align: left !important;
-        margin-bottom: 20px;
-    }
-    .Tam-affiliate .trust .trust-info .item ul li {
-        line-height: 21px;
-        background-position: left top !important;
-        padding-right: 0 !important;
-        padding-left: 35px !important;
-    }
-    .Tam-affiliate .trust .btn-registration {
-        background: #41b75e;
-        font-size: 18px;
-        font-weight: 500;
-        color: #fff;
-        margin-top: 40px;
-        height: 50px;
-        line-height: 50px;
-    }
-    .Tam-affiliate .register-bottom h2 {
-        line-height: 1.2;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-    .menu-fixed {
-        display: none !important;
-    }
 }
 
 @-webkit-keyframes float {
@@ -3693,6 +2950,10 @@ body>#container {
     margin-bottom: 30px;
 }
 
+.Tam-partner .module-about .about-us .block-content p span {
+    color: #ff5728;
+}
+
 .Tam-partner .module-about .about-us .block-content ul {
     margin: 0;
     padding: 0;
@@ -3810,7 +3071,8 @@ body>#container {
 .Tam-partner .benefit .block-content h3 img {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
+    width: 70px;
 }
 
 .Tam-partner .benefit .block-content .left {
@@ -3855,7 +3117,7 @@ body>#container {
     margin-left: 65px;
 }
 
-.Tam-partner .benefit .block-content .right .line {
+.Tam-partner .benefit .block-content .line {
     text-align: center;
     margin-top: -17px;
     margin-left: -65px;
@@ -3893,12 +3155,6 @@ body>#container {
     margin-left: -50px;
 }
 
-@media(min-width:1199px) {
-    .Tam-partner .benefit .block-content .right .row .col-12:nth-child(2) .img {
-        margin-left: -30px;
-    }
-}
-
 .Tam-partner .benefit .block-content .img-price img {
     height: 135px;
 }
@@ -3908,14 +3164,15 @@ body>#container {
     font-size: 16px;
     font-style: italic;
     margin-top: 25px;
+    display: none;
 }
 
 .Tam-partner .download-app {
-    margin-top: -125px;
+    margin-top: -95px;
     background-image: url(../img/ben-down-bg.png);
     background-repeat: no-repeat;
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     position: relative;
     z-index: 2;
 }
@@ -3963,9 +3220,7 @@ body>#container {
     margin: auto;
 }
 
-.Tam-partner .active-method {
-    padding-top: 85px;
-}
+.Tam-partner .active-method {}
 
 .Tam-partner .active-method .block-title h2 {
     color: #ff5728;
@@ -3977,10 +3232,21 @@ body>#container {
 
 .Tam-partner .active-method .item .block-image {
     margin-bottom: 52px;
+    position: relative;
+}
+
+.Tam-partner .active-method .next-right {
+    position: absolute;
+    right: 13px;
+    bottom: 0;
 }
 
 .Tam-partner .active-method .item .block-content h3 {
     margin-bottom: 25px;
+}
+
+.Tam-partner .active-method .item .block-content h3 img {
+    max-width: 100%;
 }
 
 .Tam-partner .active-method .item .block-content ul {
@@ -4032,9 +3298,9 @@ body>#container {
     right: 30px;
 }
 
-.Tam-partner .active-method .row .item:nth-child(1) .block-content {
+.Tam-partner .active-method .row .item .block-content {
     position: relative;
-    left: 50px;
+    left: 0px;
 }
 
 .Tam-partner .active-method .row .item:nth-child(1) .block-content ul {
@@ -4058,11 +3324,6 @@ body>#container {
     left: 30px;
 }
 
-.Tam-partner .active-method .row .item:nth-child(2) .block-content {
-    position: relative;
-    left: 100px;
-}
-
 .Tam-partner .active-method .row .item:nth-child(2) .block-content .content {
     padding-right: 202px;
 }
@@ -4079,8 +3340,9 @@ body>#container {
     color: #1fcd47;
 }
 
-.Tam-partner .active-method .row .item:nth-child(2) .block-image img {
+.Tam-partner .active-method .row .item .block-image img {
     margin-top: -44px;
+    max-height: 399px;
 }
 
 .Tam-partner .make-money {
@@ -4089,16 +3351,27 @@ body>#container {
     padding-bottom: 60px;
 }
 
+.Tam-partner .make-money .row {
+    position: relative;
+}
+
 .Tam-partner .make-money:before {
     background: url(../img/bg-kiem-tien.png) no-repeat;
     content: "";
     position: absolute;
     left: 0;
-    top: -80px;
+    top: 25px;
     height: 742px;
     width: 100%;
     z-index: -1;
 }
+
+.make-money-bg {
+    position: absolute;
+    top: 0;
+}
+
+.Tam-partner .make-money .item {}
 
 .Tam-partner .make-money .block-title h2 {
     color: #ff5728;
@@ -4178,7 +3451,7 @@ body>#container {
 
 .Tam-partner .download-app-free {
     background: url(../img/bg-tai-mien-phi.png) no-repeat center top;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     padding-top: 75px;
 }
 
@@ -4216,24 +3489,46 @@ body>#container {
 .Tam-partner .download-app-free .block-title h2 {
     font-size: 42px;
     font-weight: bold;
-    color: #fff;
+    color: #ff5722;
 }
 
 .Tam-partner .download-app-free .block-title p,
 .Tam-partner .download-app-free .block-title h4 {
     font-size: 21px;
-    color: #fff;
-    font-weight: 300;
+    color: #333;
+    font-weight: 400;
     padding-bottom: 40px;
     margin-bottom: 15px;
+}
+
+.footer-copyright .achievement span {
+    display: inline-block;
+}
+
+
+/*=====================RESPONSIVE=====================*/
+
+@media(max-width:1900px) {
+    .Tam-modal-register-body {
+        padding: 80px 0 35px;
+    }
+    .Tam-modal-register .close {
+        top: 30px;
+    }
+}
+
+@media(max-width:1600px) {
+    .header .main-header ul li a .badge {
+        margin: -15px 0 0 0;
+    }
+    .header .main-header ul li .childMenu li a .badge {
+        margin: -15px 0 0 0;
+    }
 }
 
 @media(min-width:1366px) and (max-width:1600px) {
     .Tam-partner .benefit:after {
         left: 0;
-    }
-    .Tam-partner .make-money:before {
-        background-position-x: -300px;
     }
     .Tam-partner .download-app:before {
         left: 165px;
@@ -4249,24 +3544,157 @@ body>#container {
     }
 }
 
+@media(max-width:1399px) {
+    .Tam-modal-register-body {
+        padding: 30px 0 35px;
+    }
+    .Tam-modal-register-body .logo {
+        height: 50px;
+    }
+    .Tam-modal-register-body .logo img {
+        height: 50px;
+    }
+    .Tam-modal-register-body h2 {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 26px;
+    }
+    .Tam-modal-register-body p {
+        margin-top: 11px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .Tam-modal-register-body .form-request {
+        margin-top: 24px;
+    }
+    .Tam-modal-register-body .form-request .social-login__btn-group {
+        margin-bottom: 0;
+    }
+    .Tam-modal-register .close {
+        top: 30px;
+    }
+    .Tam-modal-register .close svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 @media(max-width:1365px) and (min-width:1200px) {
     .Tam-partner .benefit:after {
         left: 0;
     }
-    .Tam-partner .make-money:before {
-        background-position-x: -300px;
-    }
     .Tam-partner .download-app:before {
         left: 165px;
+    }
+    .Tam-affiliate .introduce .row-fix {
+        margin: 0 -40px;
+    }
+}
+
+@media(min-width:1200px) {
+    .header .extra-header.sticky {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background: #fff;
+        box-shadow: 0 0 46px 0 rgba(5, 35, 61, .07);
+        animation: fadeInDown .1s ease;
+        left: 0;
+    }
+    .header .extra-header.sticky .logo img {
+        display: block;
+    }
+    .header .extra-header.sticky .logo span {
+        display: none;
+    }
+    .header.white .extra-header.sticky .logo span {
+        color: #42464e;
+    }
+    .header.white .extra-header.sticky .menu ul li a {
+        color: #42464e;
+    }
+    .header.white .extra-header.sticky .menu ul li.active a {
+        color: #08f;
+    }
+    .header .update-menu {
+        position: relative;
+        left: -14px;
+    }
+    .header.active-child .justify-space-beetwen {
+        -ms-flex-pack: end !important;
+        justify-content: flex-end !important;
+    }
+    .header.active-child .update-menu {
+        left: 0;
+    }
+    .footer-copyright .achievement span.icon-achievement {
+        margin-top: 0;
+    }
+    .footer-menu ul li a {
+        white-space: nowrap;
+    }
+    .footer-copyright .achievement span img {
+        margin-top: -12px;
+    }
+}
+
+@media(min-width:1199px) {
+    .Tam-partner .benefit .block-content .right .row .col-12:nth-child(2) .img {
+        margin-left: -30px;
+    }
+}
+
+@media(max-width:1199px) {
+    .header .justify-space-beetwen {
+        justify-content: flex-end !important;
+    }
+    .header.active-child .main-header {
+        margin-bottom: 0;
+        height: 85px;
+    }
+    .header.active-child .main-header .main-logo img {
+        height: 54px;
+    }
+    .header.active-child .main-header .btn-menu {
+        line-height: 54px;
+    }
+    .header .extra-header {
+        height: auto;
+        position: static;
+    }
+    .header .extra-header.show-menu {
+        border-bottom: 1px solid #d1dfe8;
+    }
+    .header .extra-header .logo {
+        width: 100%;
+    }
+    .header .extra-header .menu {
+        display: none;
+        border-top: 1px solid #dce4e9;
+    }
+    .header .extra-header .menu ul {
+        margin: 0;
+    }
+    .header .extra-header .menu ul li.active {
+        display: none;
+    }
+    .header .extra-header .menu ul li a {
+        line-height: 50px;
+    }
+    .header .extra-header .menu .btn-registration {
+        margin: 8px 0;
+    }
+    .header.white .extra-header.show-menu {
+        border-bottom: none;
+    }
+    .header.white .extra-header .menu {
+        border-top-color: rgba(255, 255, 255, .2);
     }
 }
 
 @media(min-width:992px) and (max-width:1199px) {
     .Tam-partner .make-money {
         padding-bottom: 35px;
-    }
-    .Tam-partner .make-money:before {
-        background-position-x: -300px;
     }
     .Tam-partner .make-money .row .item:nth-child(3) .block-content h3 {
         padding: 0 25px;
@@ -4317,18 +3745,211 @@ body>#container {
     .Tam-partner .active-method .row .item:nth-child(2) .block-content ul {
         padding-right: 0;
     }
+    .Tam-affiliate .step-rule {
+        padding: 60px 0 35px;
+    }
+    .Tam-affiliate .trust {
+        padding: 75px 0 45px;
+    }
+    .Tam-affiliate .trust h2 {
+        padding: 0 110px;
+    }
+    .Tam-affiliate .trust .trust-info .block-img img {
+        max-width: 100%;
+    }
+    .Tam-affiliate .trust .trust-info .item {
+        width: 220px;
+    }
+    .Tam-affiliate .trust .trust-info .item.first {
+        top: 53px;
+        right: 5px;
+    }
+    .Tam-affiliate .trust .trust-info .item.second {
+        bottom: -24px;
+        left: 340px;
+    }
+    .Tam-affiliate .trust .trust-info .item.three {
+        top: 53px;
+        left: -15px;
+    }
+    .Tam-affiliate .register-bottom h2 {
+        line-height: 1.2;
+        margin-bottom: 30px;
+        padding: 0 100px;
+    }
+    .menu-fixed {
+        display: none !important;
+    }
+    .Tam-affiliate .introduce .btn-registration {
+        margin-bottom: 22px;
+    }
+    .Tam-affiliate .introduce .row-fix {
+        margin: 0 -15px;
+    }
+    .take.two .item img {
+        width: 100%;
+    }
+    .take.three img {
+        width: 160px;
+    }
+    .Tam-affiliate .introduce .content .take.three h2 {
+        padding: 18px 60px;
+        background-size: 95% auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .take.one .item img {
+        width: 100%;
+    }
+}
+
+@media(min-width:992px) {
+    .footer .col-w-20 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .footer .col-w-60 {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .footer-copyright .achievement {
+        text-align: right;
+    }
+}
+
+@media(max-width:991px) {
+    .footer-copyright .achievement span img {
+        height: auto;
+    }
+    .footer-copyright .achievement span.icon-achievement {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .footer-bct-hanggia {
+        position: initial;
+        margin-right: 10px;
+    }
+    .footer-bct {
+        position: initial;
+    }
+    .Tam-modal-register-content {
+        padding-top: 0;
+    }
+    .Tam-modal-register .close {
+        color: #000;
+        font-size: 30px;
+        padding: 15px;
+        top: 0;
+        right: 0;
+    }
+    .Tam-affiliate .income .block-content h1 {
+        font-size: 28px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .Tam-affiliate .income .block-img img {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .Tam-affiliate .income {
+        background-size: cover;
+        padding-bottom: 0;
+    }
+    .Tam-affiliate .introduce {
+        text-align: center;
+        position: relative;
+        padding-top: 65px;
+    }
+    .Tam-affiliate .introduce .title h2 {
+        font-size: 28px;
+    }
+    .Tam-affiliate .introduce .title p {
+        font-size: 21px;
+    }
+    .Tam-affiliate .introduce .row-fix {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .Tam-affiliate .register-bottom h2 {
+        font-size: 28px;
+    }
 }
 
 @media(min-width:768px) and (max-width:991px) {
+    .Tam-affiliate .step-rule {
+        padding: 30px 0 30px;
+        background: #ff6432;
+    }
+    .Tam-affiliate .step-rule .viewDetail {
+        color: #fff;
+    }
+    .Tam-affiliate .step h2 {
+        padding: 0 140px;
+        margin: 0 0 40px;
+        font-size: 28px;
+    }
+    .Tam-affiliate .rule {
+        margin-top: 20px;
+    }
+    .Tam-affiliate .trust {
+        padding: 0 0 45px;
+    }
+    .Tam-affiliate .trust h2 {
+        font-size: 28px;
+    }
+    .Tam-affiliate .trust .trust-info .block-img {
+        height: 325px;
+        margin-top: -40px;
+    }
+    .Tam-affiliate .trust .trust-info .block-img img {
+        max-width: 100%;
+        margin: 0;
+    }
+    .Tam-affiliate .trust .trust-info .item {
+        width: 100% !important;
+        position: static;
+        text-align: left !important;
+        margin-bottom: 30px;
+    }
+    .Tam-affiliate .trust .trust-info .item ul li {
+        line-height: 21px;
+        background-position: left center !important;
+        padding-right: 0 !important;
+        padding-left: 35px !important;
+    }
+    .Tam-affiliate .register-bottom h2 {
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+    .menu-fixed {
+        display: none !important;
+    }
+    .Tam-affiliate .introduce .title h2 span {
+        font-size: 80px;
+    }
+    .Tam-affiliate .introduce .content .take.three h2 {
+        padding: 30px 220px;
+    }
+    .Tam-affiliate .introduce:before {
+        background-size: cover;
+    }
+    .Tam-affiliate .introduce .content .take h2 {
+        margin-top: 160px;
+    }
+    .Tam-affiliate .introduce:before {
+        background-position: center -110px;
+    }
+    .Tam-affiliate .introduce .btn-registration {
+        margin-bottom: 110px;
+    }
     .Tam-partner .make-money {
         padding-top: 140px;
         padding-bottom: 55px;
     }
     .Tam-partner .make-money .block-title h2 {
         font-size: 28px;
-    }
-    .Tam-partner .make-money:before {
-        background-position-x: -300px;
     }
     .Tam-partner .make-money .row .item:nth-child(1):before {
         width: 97px;
@@ -4351,7 +3972,7 @@ body>#container {
     }
     .Tam-partner .download-app {
         margin-top: 52px;
-        padding-top: 35px;
+        padding-top: 75px;
         padding-bottom: 25px;
     }
     .Tam-partner .download-app:before {
@@ -4364,7 +3985,7 @@ body>#container {
         font-size: 28px;
         padding-bottom: 20px;
     }
-    .Tam-partner .active-method .block-image img {
+    .Tam-partner .active-method .block-image img:not(.next-right) {
         height: 200px;
         margin-top: 0 !important;
     }
@@ -4409,11 +4030,11 @@ body>#container {
     }
     .Tam-partner .benefit:before {
         top: -70px;
-        height: 1600px;
+        height: 2000px;
         background-size: cover;
     }
     .Tam-partner .benefit .block-title {
-        padding-top: 90px;
+        padding-top: 300px;
     }
     .Tam-partner .benefit .block-title h2 {
         font-size: 28px;
@@ -4457,7 +4078,46 @@ body>#container {
     }
 }
 
+@media(max-width:991px) and (min-width:768px) {
+    .footer-menu {
+        padding-top: 11px;
+        margin-bottom: 5px;
+    }
+    .register-bottom {
+        background-size: cover !important;
+    }
+    .register-bottom h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .register-bottom .reg-form input {
+        width: 400px;
+    }
+    .register-bottom .reg-form .btn-registration {
+        padding: 0 35px;
+    }
+    .footer-address .shared-experience {
+        padding-top: 10px;
+    }
+    .footer .title {
+        margin-top: 25px;
+    }
+}
+
 @media(max-width:767px) {
+    .Tam-modal-register .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .footer-menu {
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    .make-money-bg {
+        top: 155px;
+        transform: rotate(90deg);
+    }
     .Tam-partner .download-app-free {
         padding-bottom: 30px;
         padding-top: 25px;
@@ -4505,9 +4165,6 @@ body>#container {
         font-size: 28px;
         margin-bottom: 30px;
     }
-    .Tam-partner .make-money:before {
-        background-position-x: -300px;
-    }
     .Tam-partner .make-money .row .item {
         left: initial !important;
     }
@@ -4553,7 +4210,10 @@ body>#container {
         font-size: 28px;
         padding-bottom: 20px;
     }
-    .Tam-partner .active-method .block-image img {
+    .next-right {
+        display: none;
+    }
+    .Tam-partner .active-method .block-image img:not(.next-right) {
         height: 200px;
         margin-top: 0 !important;
         display: block;
@@ -4683,5 +4343,287 @@ body>#container {
         display: block;
         margin: auto;
         max-width: 100%;
+    }
+    .Tam-affiliate .btn-registration {
+        margin: auto;
+        height: 58px;
+        font-size: 20px;
+        line-height: 58px;
+        padding: 0 50px;
+    }
+    .Tam-affiliate .income .block-content h1 {
+        text-align: center;
+    }
+    .Tam-affiliate .income .block-content .content {
+        text-align: center;
+    }
+    .Tam-affiliate .income .block-content .content p {
+        text-align: left;
+    }
+    .Tam-affiliate .income .block-img img {
+        max-width: 100%;
+    }
+    .Tam-affiliate .introduce:before {
+        background-size: cover;
+    }
+    .Tam-affiliate .introduce .title h2 span {
+        font-size: 48px;
+    }
+    .Tam-affiliate .introduce .content .take h2 {
+        height: 85px;
+        display: block;
+        background-size: 100%;
+        padding: 20px 27px;
+        margin-top: 65px;
+        margin-bottom: 20px;
+    }
+    .Tam-affiliate .introduce .content .take h2 span {
+        font-size: 24px;
+    }
+    .Tam-affiliate .introduce .content .take.two .list .item {
+        margin-bottom: 10px;
+    }
+    .Tam-affiliate .introduce .content .take.three h2 {
+        padding: 20px 27px;
+    }
+    .Tam-affiliate .introduce .btn-registration {
+        margin-bottom: 0;
+    }
+    .Tam-affiliate .step-rule {
+        padding: 40px 0 15px;
+        background: #41b75f;
+    }
+    .Tam-affiliate .step-rule .viewDetail {
+        color: #fff;
+    }
+    .Tam-affiliate .step h2 {
+        margin: 0 0 40px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .Tam-affiliate .step .item {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .Tam-affiliate .step .item .icon {
+        flex-shrink: 0;
+        width: 65px;
+        height: 65px;
+        background-size: 65px !important;
+        margin-right: 15px;
+    }
+    .Tam-affiliate .step .item h4 {
+        margin: 0 0 10px;
+    }
+    .Tam-affiliate .rule {
+        padding: 0 0 20px;
+        margin-top: 0;
+    }
+    .Tam-affiliate .rule h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .Tam-affiliate .rule ul li:nth-child(2) {
+        align-items: flex-start;
+    }
+    .Tam-affiliate .rule ul li:nth-child(2) span {
+        margin-top: 5px;
+    }
+    .Tam-affiliate .rule table {
+        width: 100%;
+    }
+    .Tam-affiliate .trust {
+        padding: 70px 0 45px;
+    }
+    .Tam-affiliate .trust h2 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+    .Tam-affiliate .trust .trust-info {
+        padding-bottom: 0;
+    }
+    .Tam-affiliate .trust .trust-info .block-img {
+        height: 280px;
+        margin-top: -40px;
+    }
+    .Tam-affiliate .trust .trust-info .block-img img {
+        max-width: 600px;
+        transform: translateX(-22%);
+        margin: 0;
+    }
+    .Tam-affiliate .trust .trust-info .item {
+        width: 100% !important;
+        position: static;
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+    .Tam-affiliate .trust .trust-info .item ul li {
+        line-height: 21px;
+        background-position: left top !important;
+        padding-right: 0 !important;
+        padding-left: 35px !important;
+    }
+    .Tam-affiliate .trust .btn-registration {
+        background: #ff6432;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 40px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .Tam-affiliate .register-bottom h2 {
+        line-height: 1.2;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .menu-fixed {
+        display: none !important;
+    }
+    .Tam-modal-register-body {
+        padding: 30px 15px 5px;
+        margin: 0;
+        width: 100%;
+    }
+    .Tam-modal-register-body h2 {
+        font-size: 20px;
+        line-height: normal;
+    }
+    .Tam-modal-register-body .form-request .notification .noti {
+        padding: 10px 15px;
+    }
+    .Tam-modal-register-body .form-request .form-group {
+        margin-bottom: 15px;
+    }
+    .Tam-modal-register-body .form-request .form-group.mdc-text-field input {
+        padding: 18px 10px 2px 19px;
+    }
+    .Tam-modal-register-body .form-request .form-group.mdc-text-field label {
+        top: 11px;
+    }
+    .Tam-modal-register-body .form-request .form-group.mdc-select-field label {
+        top: 1px;
+        height: 41px;
+        padding: 10px 19px;
+    }
+    .Tam-modal-register-body .form-request .form-group.mdc-select-field select {
+        padding: 18px 10px 2px 19px;
+    }
+    .Tam-modal-register-body .form-request .form-group.mdc-selectize label {
+        top: 11px;
+    }
+    .Tam-modal-register-body .form-request .form-group.captcha-field .resetCaptchaBtn,
+    .Tam-modal-register-body .form-request .form-group .captcha-field .resetCaptchaBtn {
+        width: 43px;
+        height: 43px;
+        line-height: 43px;
+    }
+    .Tam-modal-register-body .form-request .form-group.captcha-field #CaptchaInput,
+    .Tam-modal-register-body .form-request .form-group .captcha-field #CaptchaInput {
+        width: 130px;
+    }
+    .Tam-modal-register-body .form-request .form-group.captcha-field #CaptchaCanv,
+    .Tam-modal-register-body .form-request .form-group .captcha-field #CaptchaCanv {
+        height: 43px;
+        width: auto;
+    }
+    .Tam-modal-register-body .form-request .form-group.captcha-field #imgCapchaPopup,
+    .Tam-modal-register-body .form-request .form-group .captcha-field #imgCapchaPopup {
+        height: 43px;
+    }
+    .Tam-modal-register-body .form-request .form-group .selectize-input {
+        padding: 18px 10px 2px 19px;
+    }
+    .Tam-modal-register-body .form-request .form-group .btn-registration {
+        padding: 0 45px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .Tam-modal-register-body .form-request .social-login span {
+        padding-bottom: 15px;
+    }
+    .Tam-modal-register-body .form-request .social-login__btn-group {
+        margin-bottom: 20px;
+    }
+    .Tam-modal-register-body .form-request .social-login__btn-group a {
+        width: 129px;
+        height: 40px;
+        margin: 0 7.5px;
+    }
+    .Tam-modal-register .close {
+        color: #000;
+        font-size: 20px;
+        padding: 15px;
+        top: 0;
+        right: 0;
+    }
+    .Tam-modal-register .close svg {
+        fill: #000;
+        width: 20px;
+        height: 20px;
+    }
+    .register-bottom {
+        background-size: cover !important;
+    }
+    .register-bottom h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .register-bottom p {
+        font-size: 18px;
+    }
+    .register-bottom .reg-form .btn-registration {
+        line-height: 58px;
+        height: 58px;
+        font-size: 20px;
+    }
+    .footer-copyright .achievement span.icon-achievement {
+        vertical-align: top;
+    }
+    .footer-copyright .achievement {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    .footer-copyright .copyright {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .footer-copyright {
+        padding: 0;
+    }
+    .footer-bct-hanggia {
+        position: initial;
+    }
+    .footer-bct {
+        position: initial;
+    }
+    .footer-address .shared-experience {
+        padding-top: 10px;
+    }
+    .footer-address .shared-experience+ul {
+        margin-bottom: 20px;
+    }
+    .footer-address {
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width:767px) and (min-width:576px) {
+    .footer-copyright:after {
+        content: "";
+        height: 1px;
+        background: #24282e;
+        width: 100%;
+        position: absolute;
+        top: 84px;
+    }
+}
+
+@media(max-width:575px) {
+    .footer-copyright .achievement span {
+        max-width: 55%;
     }
 }

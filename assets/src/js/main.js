@@ -67,6 +67,9 @@ $(function() {
             },
             991: {
                 slidesPerView: 2
+            },
+            1111: {
+                slidesPerView: 4
             }
         }
     });
