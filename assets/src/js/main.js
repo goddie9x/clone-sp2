@@ -302,6 +302,7 @@ $(function() {
             s.parentNode.insertBefore(lc, s);
         })();
     }, 3000);
+    fixedHeader('#header');
 });
 
 function openMenu() {
@@ -316,3 +317,50 @@ function closeMenu() {
     $('.menu-mobile').removeClass('show');
 }
 $(function() {});
+
+function fixedHeader(elements, breakpoint, classAdd = "fixed-top", elementDepend) {
+    //mdByHT
+    if (elements) {
+        let breakPoint = undefined;
+        let ElementDepend = undefined;
+        if (breakpoint) {
+            if (typeof(breakpoints) == "number") {
+                breakPoint = breakpoint;
+            }
+            if (typeof(breakpoints) == "string") {
+                breakPoint = $(breakpoint).height();
+            }
+            if (typeof(elementDepend) == "string") {
+                ElementDepend = $(elementDepend).height();
+            }
+        } else {
+            breakPoint = $(elements).height();
+        }
+        $(document).ready(function() {
+            if (typeof(elements) == 'array') {
+                elements.forEach(function(element) {
+                    $(window).scroll(function() {
+                        let scroll = $(window).scrollTop();
+                        if (scroll > breakPoint) {
+                            $(element).addClass(classAdd);
+                        } else {
+                            $(element).removeClass(classAdd);
+                        }
+                    });
+                });
+            } else {
+                $(window).scroll(function() {
+                    let scroll = $(window).scrollTop();
+
+                    if (scroll > breakPoint) {
+                        $(elements).addClass(classAdd);
+                    } else {
+                        $(elements).removeClass(classAdd);
+                    }
+                });
+            }
+        });
+    } else {
+        console.error('first argument must be exiting');
+    }
+}
